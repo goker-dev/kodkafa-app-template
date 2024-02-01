@@ -1,0 +1,7 @@
+body {
+  @apply bg-zinc-100 text-zinc-800 dark:bg-zinc-900 dark:text-amber-50;
+}
+
+a.active {
+  @apply text-red-500;
+}
