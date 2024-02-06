@@ -18,7 +18,7 @@ export default function Localization({ className = '', short = true }: Props) {
     <div className={`whitespace-nowrap ${className}`}>
       <select
         defaultValue={locale}
-        className='border-none outline-none focus:ring-0 text-sm uppercase pr-6 bg-transparent'
+        className='border-none outline-none focus:ring-0 uppercase pr-6 bg-transparent'
         onChange={(e) => localization.changeLanguage(e.currentTarget.value)}
       >
         {(locales || [])

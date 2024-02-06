@@ -21,7 +21,7 @@ export default function CookieBanner() {
           className='flex items-center justify-center'
         >
           <div className='xl:container md:p-6 p-4'>
-            <div className='flex items-stretch'>
+            <div className='flex items-stretch flex-col sm:flex-row'>
               <div className='grow'>
                 <h2 className='text-lg font-semibold mb-2 dark:text-black'>
                   {t('Cookies and use of our website')}
@@ -47,7 +47,7 @@ export default function CookieBanner() {
                   </Link>
                 </div>
               </div>
-              <div className='flex items-center pl-4'>
+              <div className='flex items-center sm:pl-4 justify-end'>
                 <button onClick={handleAccept} className='button button-blue'>
                   {t('Accept')}
                 </button>
